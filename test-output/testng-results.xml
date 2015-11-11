@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="50575" started-at="2015-11-11T02:27:28Z" finished-at="2015-11-11T02:28:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="50575" started-at="2015-11-11T02:27:28Z" finished-at="2015-11-11T02:28:19Z">
+      <class name="test.ContentVideoVIaYUrlTest">
+        <test-method status="PASS" signature="testSetup()[pri:0, instance:test.ContentVideoVIaYUrlTest@1e831d11]" name="testSetup" is-config="true" duration-ms="15865" started-at="2015-11-10T21:27:28Z" finished-at="2015-11-10T21:27:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method status="PASS" signature="ContentVideoTwo()[pri:0, instance:test.ContentVideoVIaYUrlTest@1e831d11]" name="ContentVideoTwo" duration-ms="34686" started-at="2015-11-10T21:27:44Z" finished-at="2015-11-10T21:28:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContentVideoTwo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.ContentVideoVIaYUrlTest@1e831d11]" name="tearDown" is-config="true" duration-ms="1" started-at="2015-11-10T21:28:19Z" finished-at="2015-11-10T21:28:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.ContentVideoVIaYUrlTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
