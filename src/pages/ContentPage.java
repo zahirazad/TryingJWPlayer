@@ -1,10 +1,7 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-
 
 public class ContentPage {
 	@FindBy(id = "Content")
@@ -18,14 +15,12 @@ public class ContentPage {
 		video_upload_input
 				.sendKeys("C:\\Users\\sojib\\workspace\\JWPLAYER\\lib\\Wildlife.wmv");
 	}
-	public void VideoContentSetup(){
+
+	public void VideoContentSetup() {
 		ContentLink.click();
 		uploadingVideos.click();
-		uploadingVideos.sendKeys("C:\\Users\\sojib\\workspace\\JWPLAYER\\lib\\Wildlife.wmv");
-		
-		
-		
-		
-		
+		uploadingVideos
+				.sendKeys("C:\\Users\\sojib\\workspace\\JWPLAYER\\lib\\Wildlife.wmv");
+
 	}
 }
