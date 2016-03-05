@@ -14,6 +14,9 @@ import pages.ContentPage;
 import pages.ContentVideosviaUrl;
 import pages.LogInPage;
 import pages.MakingPlayerPage;
+import pages.MyAccountProfilePage;
+import pages.TitleAndTagPage;
+import pages.UserscountPage;
 import pages.headerPage;
 
 public class Base {
@@ -24,16 +27,22 @@ public class Base {
 	public ContentPage contentvideoPage;
 	public ContentVideosviaUrl contentvideoPageUrlTwo;
 	public headerPage HeaderPage;
+	public TitleAndTagPage titleAndtagPage;
+	public MyAccountProfilePage myProfilePage;
+	public UserscountPage totalUserpage;
 
 	@BeforeTest
 	public void testSetup() {
+
+		// System.setProperty("webdriver.chrome.driver",
+		// System.getProperty("user.dir")+ "\\lib\\chromedriver.exe");
+		// driver = new ChromeDriver();
+		// System.out.println("its chromeDriver");
 		// System.setProperty("webdriver.chrome.driver",
 		// "/path/to/chromedriver");
 
-		// WebDriver driver = new ChromeDriver();
-
 		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("http://www.jwplayer.com/");
 		logInPage = PageFactory.initElements(driver, LogInPage.class);
@@ -45,10 +54,17 @@ public class Base {
 		contentvideoPageUrlTwo = PageFactory.initElements(driver,
 				ContentVideosviaUrl.class);
 		HeaderPage = PageFactory.initElements(driver, headerPage.class);
+		titleAndtagPage = PageFactory.initElements(driver,
+				TitleAndTagPage.class);
+		myProfilePage = PageFactory.initElements(driver,
+				MyAccountProfilePage.class);
+		totalUserpage = PageFactory.initElements(driver, UserscountPage.class);
+
 	}
 
 	@AfterTest
 	public void tearDown() {
-		driver.quit();
+		//driver.close();
+		// driver.quit();
 	}
 }
