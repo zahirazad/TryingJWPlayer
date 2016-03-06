@@ -9,12 +9,14 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import pages.AnalyticPage;
 import pages.BuildPlayerPage;
 import pages.ContentPage;
 import pages.ContentVideosviaUrl;
 import pages.LogInPage;
 import pages.MakingPlayerPage;
 import pages.MyAccountProfilePage;
+import pages.SupportPage;
 import pages.TitleAndTagPage;
 import pages.UserscountPage;
 import pages.headerPage;
@@ -30,6 +32,8 @@ public class Base {
 	public TitleAndTagPage titleAndtagPage;
 	public MyAccountProfilePage myProfilePage;
 	public UserscountPage totalUserpage;
+	public SupportPage supportPage;
+	public AnalyticPage analyticsPage;
 
 	@BeforeTest
 	public void testSetup() {
@@ -59,12 +63,13 @@ public class Base {
 		myProfilePage = PageFactory.initElements(driver,
 				MyAccountProfilePage.class);
 		totalUserpage = PageFactory.initElements(driver, UserscountPage.class);
-
+        supportPage= PageFactory.initElements(driver, SupportPage.class);
+        analyticsPage= PageFactory.initElements(driver, AnalyticPage.class);
 	}
 
 	@AfterTest
 	public void tearDown() {
-		//driver.close();
+		driver.close();
 		// driver.quit();
 	}
 }
