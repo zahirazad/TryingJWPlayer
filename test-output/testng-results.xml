@@ -1,25 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20048" started-at="2016-03-06T03:53:02Z" finished-at="2016-03-06T03:53:23Z">
+  <suite name="Default suite" duration-ms="33755300" started-at="2016-03-08T03:48:32Z" finished-at="2016-03-08T13:11:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20048" started-at="2016-03-06T03:53:02Z" finished-at="2016-03-06T03:53:23Z">
-      <class name="test.SupportTest">
-        <test-method status="PASS" signature="testSetup()[pri:0, instance:test.SupportTest@fc77f54]" name="testSetup" is-config="true" duration-ms="13093" started-at="2016-03-05T22:53:02Z" finished-at="2016-03-05T22:53:16Z">
+    <test name="Default test" duration-ms="33755300" started-at="2016-03-08T03:48:32Z" finished-at="2016-03-08T13:11:07Z">
+      <class name="test.ContentVideosTest">
+        <test-method status="FAIL" signature="testSetup()[pri:0, instance:test.ContentVideosTest@22d215]" name="testSetup" is-config="true" duration-ms="0" started-at="2016-03-07T22:48:32Z" finished-at="2016-03-07T22:48:32Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'sojib-HP', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'sojib-HP', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:311)
+	at testBase.Base.testSetup(Base.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
+	at org.testng.TestRunner.run(TestRunner.java:609)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:170)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	... 24 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method status="PASS" signature="SupportingTestLink()[pri:0, instance:test.SupportTest@fc77f54]" name="SupportingTestLink" duration-ms="6925" started-at="2016-03-05T22:53:16Z" finished-at="2016-03-05T22:53:22Z">
+        <test-method status="SKIP" signature="uploadingVideos()[pri:0, instance:test.ContentVideosTest@22d215]" name="uploadingVideos" duration-ms="1" started-at="2016-03-08T08:11:07Z" finished-at="2016-03-08T08:11:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SupportingTestLink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.SupportTest@fc77f54]" name="tearDown" is-config="true" duration-ms="16" started-at="2016-03-05T22:53:22Z" finished-at="2016-03-05T22:53:23Z">
+        </test-method> <!-- uploadingVideos -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test.ContentVideosTest@22d215]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-03-08T08:11:07Z" finished-at="2016-03-08T08:11:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.SupportTest -->
+      </class> <!-- test.ContentVideosTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
